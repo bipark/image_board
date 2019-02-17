@@ -42,7 +42,11 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/vuetify'
+    {src: '~/plugins/vuetify'},
+    {src: '~/plugins/vue-localstorage.js'},
+    {src: '~/plugins/axios.js'},
+    {src: '~/plugins/mobile-access.js', ssr:false},
+    {src: '~/plugins/vue-social-sharing.js', ssr:false}
   ],
 
   /*
@@ -77,5 +81,17 @@ module.exports = {
     extend(config, ctx) {
       
     }
+  },
+
+  serverMiddleware: [
+    '~/apiserver/index.js'
+  ],
+
+  rules: {
+    "semi": [2, "never"],
+    "no-console": "off",
+    "vue/max-attributes-per-line": "off",
+    "prettier/prettier": ["error", { "semi": false }]
   }
+
 }

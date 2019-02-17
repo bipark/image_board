@@ -4,8 +4,8 @@ import Vuex from 'vuex';
 const store = () => new Vuex.Store({
 
   state: {
-    bcolor: "black",
-    bgcolor: "black lighten-1",
+    bcolor: "indigo",
+    bgcolor: "indigo lighten-3",
     user: null,
     autoplay: true,
     mobile: false,
