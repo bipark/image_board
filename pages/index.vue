@@ -1,8 +1,8 @@
 <template>
 
-  <component :is="$store.state.mobile ? 'div': 'v-container'">
+  <v-container>
 
-  </component>
+  </v-container>
 
 </template>
 

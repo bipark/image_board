@@ -1,6 +1,6 @@
 <template>
 
-  <component :is="$store.state.mobile ? 'div': 'v-container'">
+  <v-container>
 
     <h2 class="mt-2 ml-1 mb-2">로그인</h2>
 
@@ -40,7 +40,7 @@
       </v-layout>
     </v-card>
 
-  </component>
+  </v-container>
 
 </template>
 

@@ -37,7 +37,7 @@
 
           <v-card-text class="footer-detail-text">
             <div>
-              &copy;2018 <strong> {{companyName}} </strong> All Rights Reserved
+              &copy;2019 <strong> {{companyName}} </strong> All Rights Reserved
             </div>
             <div>
               <nuxt-link to="/info/privacy" class="white--text">
